@@ -1,0 +1,2 @@
+Praca domowa
+Wykonaæ na kartce formatu A4 projekt formularza. Formularz wykonujemy o³owkiem, linijk¹, ma on zawieraæ wszystkie elementy formularzy oraz zajmowaæ ca³¹ powierzchniê kartki. Kartkê z przodu podpisujemy: Imiê, nazwisko, klasa, grupa.
