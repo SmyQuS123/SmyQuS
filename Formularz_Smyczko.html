@@ -1,77 +1,82 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
-<html>
+<html lang="pl">
+
 <head>
-<meta charset="utf-8">
-<title> Strona Formularza </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
+
 <body>
-   <FIELDSET style="background-color: silver;">
-<form action="*">
-<label>Imię</label> <input type="text" name="imie" />
-   <br>
-   <BR>
-   <label>Nazwisko</label> <input type="text" name="nazwisko" />
-   <br>
-    <FIELDSET style="background-color: silver;">  
-Płeć
-<br>
-Kobieta
-<input type="radio" name="radio" value="wartość" />
-<br>
- Mężczyzna
-<input type="radio" name="radio" value="wartość" />
-        </FIELDSET>
-   <br>
-   Rok urodzenia
-   <select name="select">
-<option>2015</option>
-      <option>2014</option>
-      <option>2013</option>
-      <option>2012</option>
-      <option>2011</option>
-      <option>2010</option>
-      <option>2009</option>
-      <option>2008</option>
-      <option>2007</option>
-      <option>2006</option>
-      <option>2005</option>
-      <option>2004</option>
-      <option>2003</option>
-      <option>2002</option>
-      <option>2001</option>
-<option>2000</option>
-   </select
-      <br>
-      <br>
-      Miasto
-   <select name="select">
-<option>Warszawa</option>
-      <option>Kraków</option>
-      <option>Łódź</option>
-      <option>Wrocław</option>
-      <option>Poznań</option>
-      <option>Gdańsk</option>
-      <option>Szczecin</option>
-      <option>Bydgoszcz</option>
-      <option>Lublin</option>
-      <option>Białystok</option>
-      <option>Katowice</option>
-      <option>Gdynia</option>
-      <option>Toruń</option>
-      <option>Rzeszów</option>
-      <option>Olsztyn</option>
-   </select
-      <br>
-      <br>
-      <label>E-mail</label> <input type="text" name="E-mail" />
-      <br>
-      <label>Hasło</label> <input type="password" name="haslo" />
-     </form>
- </FIELDSET>
-</form>
-   <IMG SRC="Formularz_Smyczko.jpg" ALIGN=left BORDER=0 WIDTH=1000 HEIGHT=1000 ALT=„Formularz_Smyczko”>
-  <br>
-  <A HREF="index.html" NAME="index.html"></> Wstecz</A>
+    <from method="post">
+        <div id="logo">
+            FORMULARZ ZGŁOSZENIOWY DO <br/> ADMINISTRACJI
+            <br/>
+        </div>
+        <div id="imie">
+
+            <input type="text" />
+            <br/> Imie
+
+        </div>
+        <div id="nazwisko">
+
+            <input type="text" />
+            <br/> nazwizko
+
+        </div>
+        <div style="clear:both"></div>
+        <div id="mieszkanie">
+            <h3>Gdzie Mieszkasz?</h3>
+
+            <input type="checkbox" /> USA<br/>
+            <input type="checkbox" /> Polska<br/>
+            <input type="checkbox" /> Niemcy
+
+        </div>
+        <div id="dos">
+            <h3>Czy Masz doświadczenie</h3>
+
+            <input type="radio" name="dos" value="Kobieta"> Nie
+            <input type="radio" name="dos" value="Mężczyzna"> Tak
+
+        </div>
+        <div style="clear:both"></div>
+        <div id="um">
+            <h3>Jak oceniasz swoje umiejętności?</h3>
+
+            <select name="um">
+                <option selected>Dobre</option>
+                <option>Słabe</option>
+            </select>
+
+        </div>
+        <div id=dl>
+            <h3>Dlaczego właśnie ciebie powinniśmy przyjąć?</h3>
+
+            <textarea name="Komentarz" cols="50" rows="10"></textarea>
+
+        </div>
+        <div style="clear:both"></div>
+        <div id="haslo">
+            <h3>Hasło do formularza</h3>
+
+            <input type="password" />
+
+        </div>
+        <div id="przy">
+
+            <input type="submit" value="Wyślij"><br/>
+
+        </div>
+        <div id="przy2">
+
+            <input type="reset" value="Wyczść dane">
+
+        </div>
+    </from>
 </body>
+
 </html>
