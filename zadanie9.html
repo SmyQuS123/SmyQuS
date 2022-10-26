@@ -2,9 +2,16 @@
 <body>
 <div style="color:red;font-size:50px;">
 <script language="JavaScript">
-var liczba1=prompt("podaj m=","");
-var m_smy=parseFloat(liczba1); 
-document.write("1/"+<br>");
+var dzien1 = prompt("dzień1=", "");
+var dzien2 = prompt("dzień2=", "");
+var godzina1 = prompt("godzina1=", "");
+var godzina2 = prompt("godzina2=", "");
+var sumad = dzien1 - dzien2;
+var sumag = godzina1 - godzina2;
+sumadzien = sumadzien * 86400;
+sumagodzina = sumagodzina * 3600;
+suma = sumadzien + sumagodzina;
+document.write("ilość sekund: " + suma);
 </script>
 </div>
 </body>
