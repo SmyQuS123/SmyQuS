@@ -1,15 +1,26 @@
 <textarea cols=200 rows=13>
 <html>
 <body>
-<div style="color:red;font-size:30px;">
+<div style="color:violet;font-size:13mm;">
 <script language="JavaScript">
-var C_smy = prompt("podaj a", "");
-var D_smy = prompt("podaj b", "");
-var A_smy = parseFloat(C);
-var B_smy = parseFloat(D);
-document.write("(" + A + " + " + B + "^3 = " + A + "^3 + 3 * ((" + A + ")^" + B + ") * (" + B + ") + 3 * (" + A + ") * ((" + B + ")^" + B + ") + " + B + "^3 = " + (A * A * A) + " + " + (3 * ((A * A) * 2)) + " + " + ((3 * A) * (B * B)) + " + " + B * B * B + " = " + ((A * A * A) + (3 * ((A * A) * 2)) + ((3 * A) * (B * B)) + B * B * B));
+var liczba1=prompt("podaj c=","");
+var liczba2=prompt("podaj b=","");
+var c_smy=parseFloat(liczba1);
+var b_smy=parseFloat(liczba2);
+document.write("C="+c_smy.toFixed(2)+"cm"+"<br>");
+document.write("B="+b_smy.toFixed(2)+"cm"+"<br>");
+var a_smy=Math.sqrt(Math.pow(c_smy,2)-Math.pow(b_smy,2));
+document.write("A="+a_smy.toFixed(2)+"cm"+"<br>");
+// Oblicz obw i pole pamietaj o jednostkach sin_alfa_smy=b_smy/c_smy
+sin_alfa_smy=b_smy/c_smy;
+document.write("sin(a)="+sin_alfa_smy.toFixed(3)+"<br>");
+alfa_smy=Math.asin(b_smy/c_smy)*(180/Math.PI);
+document.write("alfa="+alfa_smy.toFixed(2)+" st"+"<br");
 </script>
 </div>
+</body>
+</html>
+</head>
 </body>
 </html>
 </textarea>
