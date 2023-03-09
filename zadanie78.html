@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Liczby nieparzyste</title>
+	<style>
+		body {
+			font-size: 24px;
+			color: green;
+		}
+
+		.blue {
+			color: blue;
+			font-size: 12px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Liczby nieparzyste</h1>
+	<label for="number1">Wprowadź pierwszą liczbę:</label>
+	<input type="number" id="number1">
+	<label for="number2">Wprowadź drugą liczbę:</label>
+	<input type="number" id="number2">
+	<button onclick="findOddNumbers()">Szukaj liczb nieparzystych</button>
+
+	<div id="result"></div>
+
+	<script>
+		function findOddNumbers() {
+			const number1 = parseInt(document.getElementById("number1").value);
+			const number2 = parseInt(document.getElementById("number2").value);
+			let output = "";
+
+			if (number1 === number2) {
+				output = "Podane liczby są równe, brak obliczeń.";
+			} else if (number1 < number2) {
+				for (let i = number1 + 1; i < number2; i++) {
+					if (i % 2 !== 0) {
+						output += i + " ";
+					}
+				}
+			} else {
+				output = "<span class='blue' style='font-size: 12px;'>Liczby wypisywane są od największej do najmniejszej.</span><br>";
+				for (let i = number1 - 1; i > number2; i--) {
+					if (i % 2 !== 0) {
+						output += "<span class='blue'>" + i + "</span> ";
+					}
+				}
+			}
+
+			document.getElementById("result").innerHTML = output;
+		}
+	</script>
+</body>
+</html>
