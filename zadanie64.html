@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Wczytywanie koloru tekstu</title>
+  </head>
+  <body>
+    <script>
+      function wyswietlKolor() {
+        var x = prompt("Podaj liczbę:");
+
+if (x % 2 === 0) {
+  console.log("%cLiczba jest parzysta", "color: red; font-size: 3em;");
+} else {
+  console.log("%cLiczba jest nieparzysta", "color: silver; font-size: 5em;");
+}
+      }
+    </script>
+    <button onclick="wyswietlKolor()">Wybierz kolor</button>
+  </body>
+</html>

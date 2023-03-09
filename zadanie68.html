@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<div style="color:red;font-size:50px;">
+  <script language="JavaScript">
+var name = prompt("Podaj swoje imię i nazwisko:");
+var length = name.length;
+var isEven = length % 2 === 0;
+var displayCount = (length % 4) + 10;
+var fontSize = (length % 3) + 40;
+
+if (isEven) {
+  for (var i = 0; i < displayCount; i++) {
+    document.write("<span style='color: blue; font-size: " + fontSize + "px'>" + name.split(" ")[1] + "</span><br>");
+  }
+} else {
+  for (var i = 0; i < displayCount; i++) {
+    document.write("<span style='color: green; font-size: " + fontSize + "px'>" + name.split(" ")[0] + "</span><br>");
+  }
+}
+</script>
+</div>
+</body>
+</html>

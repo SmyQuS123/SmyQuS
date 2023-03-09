@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title> Przykład użycia pętli </title>
+ <script language="JavaScript">
+ var n = prompt("Ile razy wyświetlić ciąg liczb?");
+ var inicjaly = prompt("Podaj swoje inicjały");
+ 
+ for (var j=1; j<=n; j++) {
+   for (var i=1; i<=10; i++) {
+     var ilosc_spacji = 10 - i;
+     var liczba = (j < 10 ? "0" : "") + j;
+     document.write(i + "_" + inicjaly + "_" + liczba + "&nbsp".repeat(ilosc_spacji) + "<br>");
+   }
+ }
+ </script>
+</head>
+<body>
+</body>
+</html>

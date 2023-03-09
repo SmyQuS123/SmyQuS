@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Wczytywanie koloru tekstu</title>
+  </head>
+  <body>
+    <script>
+const liczba = prompt("Podaj liczbę:");
+if (liczba % 2 === 0) {
+  const parzystyNapis = document.createElement("h1");
+  parzystyNapis.innerText = "Liczba jest parzysta";
+  parzystyNapis.style.color = "red";
+  parzystyNapis.style.fontSize = "3rem";
+  document.body.appendChild(parzystyNapis);
+} else {
+  const nieparzystyNapis = document.createElement("h1");
+  nieparzystyNapis.innerText = "Liczba jest nieparzysta";
+  nieparzystyNapis.style.color = "silver";
+  nieparzystyNapis.style.fontSize = "5rem";
+  document.body.appendChild(nieparzystyNapis);
+}
+    </script>
+    <button onclick="wyswietlKolor()">Wybierz kolor</button>
+  </body>
+</html>
